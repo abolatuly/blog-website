@@ -88,8 +88,7 @@ class Comment(db.Model):
 
     body = db.Column(db.Text, nullable=False)
 
-# with app.app_context():
-#     db.create_all()
+db.create_all()
 
 
 @app.route('/')
